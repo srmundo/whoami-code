@@ -127,13 +127,25 @@ nav .cont-menubar ul li a{
     overflow: hidden;
     padding: 10px;
     border: 1px solid #0000001a;
-    border-radius: 5px;
     box-shadow: 2px 2px 3px #0000003a;
     text-align: center;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
+    margin-right: 15px;
+}
+.cont-services .cont-inf-sers div p{
+    font-size: 0.9rem;
+    text-align: left;
+}
+#services .container h2{
+    font-family: roboto-bold;
+    text-align: center;
+}
+#why .container h2{
+    font-family: roboto-bold;
+    text-align: center;
 }
 .cont-services .cont-inf-sers{
     display: flex;
