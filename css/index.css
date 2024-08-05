@@ -101,6 +101,73 @@ nav .cont-menubar ul li a{
     text-decoration: none;
     font-family: dogica-bold;
 }
+
+.content-inf-wl{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.content-inf-wl p{
+    width: 60%;
+}
+.content-inf-wl div{
+    width: 30%;
+}
+.content-inf-wl div img{
+    width: 100%;
+}
+.cont-services{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.cont-services .cont-inf-sers div{
+    width: 30%;
+    height: 25em;
+    overflow: hidden;
+    padding: 10px;
+    border: 1px solid #0000001a;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px #0000003a;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.cont-services .cont-inf-sers{
+    display: flex;
+    width: 65%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cont-services .cont-img-inf-ser{
+    width: 30%;
+}
+.cont-services .cont-img-inf-ser img{
+    width: 100%;
+}
+
+.cont-inf-why{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.cont-inf-why ul{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.cont-inf-why div{
+    width: 30%;
+}
+.cont-inf-why div img{
+    display: block;
+    width: 100%;
+}
 section {
     padding: 7rem 1rem;
     max-width: 1200px;
