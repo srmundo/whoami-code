@@ -1,0 +1,18 @@
+@font-face {
+    font-family: dogica-bold;
+    src: url(../assets/fonts/dogicabold.ttf);
+}
+
+@font-face {
+    font-family: longre;
+    src: url(../assets/fonts/DK\ Longreach.otf);
+}
+
+@font-face {
+    font-family: roboto-bold;
+    src: url(../assets/fonts/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: roboto-medium;
+    src: url(../assets/fonts/Roboto/Roboto-Medium.ttf);
+}
