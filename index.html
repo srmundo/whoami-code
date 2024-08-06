@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/font.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   </head>
   <body id="init">
     
@@ -28,7 +29,7 @@
         </ul>
       </div>
     </nav>
-    <header>
+    <header id="header">
         
       <span class="cont-img-back"></span>
       <div class="cont-h">
@@ -37,11 +38,28 @@
               <h1>Transforma tu Presencia Digital con <strong>&lt;WhoamiCode&sol;&gt;</strong></h1>
               <p>Innovación en Software Web y Diseño Web a tu Alcance</p>
             </div>
-            <div class="cont-img-represent">
-              <img
-                src="./assets/image/ai-generated-8775742_1280.png"
-                alt="software service"
-              />
+            <div class="box-contact">
+              <a rel="noopener" href="https://api.whatsapp.com/send?phone=NUMERO_TELEFONO&text=MENSAJE_PREDEFINIDO" class="whatsapp-button" target="_blank">
+                <img src="./assets/image/whatsapp.png" alt=""><p>Enviar mensaje por WhatsApp</p>
+              </a>
+              <hr><strong>o envianos un correo</strong><hr>
+              <form class="form-header" id="form-header">
+                <div class="form-group">
+                  <label for="name">Nombre:</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Correo Electrónico:</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="message">Mensaje:</label>
+                  <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">
+                  Enviar correo
+                </button>
+              </form>
             </div>
         </div>
       </div>
@@ -70,9 +88,11 @@
       <div class="container" id="target2">
         <h2>Servicios</h2>
         <div class="cont-services">
-          <div class="cont-inf-sers">
-            <div class="cont-inf-ser1">
-              <h3>Desarrollo de Software Web Personalizado</h3>
+            <div class="cont-inf-ser1 cont-inf-ser">
+              <div class="title-inf-ser">
+                <h3>Desarrollo de Software Web Personalizado</h3>
+                <div><img src="./assets/image/dever-de-casa.png" alt=""></div>
+              </div>
             <p>
               Desde aplicaciones web robustas hasta plataformas personalizadas, en
               whoamiCode desarrollamos soluciones a medida que se adaptan a tus
@@ -81,8 +101,11 @@
             </p>
             </div>
     
-            <div class="cont-inf-ser2">
-              <h3>Diseño Web Impactante</h3>
+            <div class="cont-inf-ser2 cont-inf-ser">
+              <div class="title-inf-ser">
+                <h3>Diseño Web Impactante</h3>
+                <div><img src="./assets/image/design-thinking.png" alt=""></div>
+              </div>
             <p>
               Creemos en el poder de un diseño web atractivo y funcional. Nuestro
               equipo de diseñadores se centra en crear sitios web que no solo son
@@ -91,8 +114,11 @@
             </p>
             </div>
     
-            <div class="cont-inf-ser3">
-              <h3>Optimización y Mantenimiento</h3>
+            <div class="cont-inf-ser3 cont-inf-ser">
+              <div class="title-inf-ser">
+                <h3>Optimización y Mantenimiento</h3>
+                <div><img src="./assets/image/optimize.png" alt=""></div>
+              </div>
             <p>
               No solo desarrollamos y diseñamos, también nos encargamos de mantener
               y optimizar tu sitio web para asegurar que siempre esté en su mejor
@@ -100,10 +126,6 @@
               tu presencia digital siempre esté al día.
             </p>
             </div>
-          </div>
-          <div class="cont-img-inf-ser">
-            <img src="./assets/image/wrench-4941426_1280.png" alt="">
-          </div>
         </div>
       </div>
     </section>
@@ -163,7 +185,7 @@
 
     <section id="contact">
       <div class="container" id="target4">
-        <h2>¿Listo para Transformar tu Presencia Digital?</h2>
+        <h2>Cuentanos sobre tu proyecto</h2>
         <p>
           Contáctanos hoy para discutir cómo whoamiCode puede ayudarte a
           alcanzar tus objetivos digitales. ¡Estamos aquí para hacer realidad
@@ -179,15 +201,11 @@
             <input type="email" id="email" name="email" required />
           </div>
           <div class="form-group">
-            <label for="phone">Teléfono:</label>
-            <input type="tel" id="phone" name="phone" />
-          </div>
-          <div class="form-group">
             <label for="message">Mensaje:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
           </div>
           <button type="submit" class="cta-button">
-            Solicita una Consulta Gratis
+            Enviar correo
           </button>
         </form>
       </div>
@@ -195,10 +213,10 @@
 
     <footer>
       <p>&copy; 2024 whoamiCode. Todos los derechos reservados.</p>
-      <p>
+      <!--<p>
         Dirección: [Tu Dirección] | Teléfono: [Tu Teléfono] | Correo
         Electrónico: <a href="mailto:[Tu Correo]">[Tu Correo]</a>
-      </p>
+      </p>-->
       <p>Síguenos en: [Redes Sociales]</p>
       <p>
         Image by
@@ -212,6 +230,9 @@
           >Pixabay</a
         >
       </p>
+      <p><a href="https://www.flaticon.com/br/icones-gratis/ui" title="ui ícones">Ui ícones criados por Parzival’ 1997 - Flaticon</a></p>
+      <p><a href="https://www.flaticon.com/br/icones-gratis/criatividade" title="criatividade ícones">Criatividade ícones criados por Eucalyp - Flaticon</a></p>
+      <p><a href="https://www.flaticon.com/br/icones-gratis/dever-de-casa" title="dever de casa ícones">Dever de casa ícones criados por Freepik - Flaticon</a></p>
       <p>Image by <a href="https://pixabay.com/users/io-images-1096650/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4941426">Stephan</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4941426">Pixabay</a></p>
       <p>Image by <a href="https://pixabay.com/users/shafin_protic-16278454/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6127616">Shafin Al Asad Protic</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6127616">Pixabay</a></p>
     </footer>
