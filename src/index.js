@@ -74,3 +74,4 @@ function sendEmail(form){
 }
 
 sendEmail("form-header");
+sendEmail("form-last");
