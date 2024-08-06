@@ -7,7 +7,7 @@ body {
 }
 header {
     position: relative;
-    height: 90vh;
+    height: 93vh;
 }
 .cont-h{
     background-color: none;
@@ -75,8 +75,9 @@ nav{
     position: sticky;
     top: 0%;
     left: 0%;
-    height: 10vh;
+    height: 8vh;
     z-index: 2;
+    overflow: hidden;
 }
 .letter {
     display: inline-block;
@@ -89,13 +90,26 @@ nav .cont-menubar ul{
     list-style: none;
     width: 100%;
 }
+nav .cont-menubar ul li{
+    margin-left: 5px;
+}
 nav .cont-menubar ul li a{
     padding: 5px;
     text-decoration: none;
     color: #DBF745;
     font-family: roboto-medium;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.3s;
 }
-
+nav .cont-menubar ul li a:hover{
+    background-color: #751cac;
+}
+nav .cont-menubar ul li a svg{
+    fill: #DBF745;
+    margin-right: 5px;
+}
 .cont-brand a{
     color: #DBF745;
     text-decoration: none;
