@@ -204,9 +204,15 @@
             <label for="message">Mensaje:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
           </div>
-          <button type="submit" class="cta-button">
-            Enviar correo
-          </button>
+          <div class="cont-btnform-last">
+            <button type="submit" class="cta-button">
+              Enviar correo
+            </button>
+            <span>O tambien puedes</span>
+            <a rel="noopener" href="https://api.whatsapp.com/send?phone=NUMERO_TELEFONO&text=MENSAJE_PREDEFINIDO" class="whatsapp-button" target="_blank">
+              <img src="./assets/image/whatsapp.png" alt=""><p>Enviar mensaje por WhatsApp</p>
+            </a>
+          </div>
         </form>
       </div>
     </section>

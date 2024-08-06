@@ -60,6 +60,23 @@ header {
     font-family: roboto-bold;
     color: #1f033175;
 }
+.cont-btnform-last a{
+    height: 26px;
+}
+.cont-btnform-last a img{
+    margin-right: 5px;
+}
+.cont-btnform-last span{
+    font-size: 14px;
+    color: #340552;
+    font-family: roboto-bold;
+}
+.cont-btnform-last{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content: space-around;
+}
 .form-header .form-group input, .form-header .form-group textarea{
     width: 90%;
     margin: auto;

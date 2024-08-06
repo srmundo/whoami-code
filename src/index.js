@@ -65,9 +65,9 @@ function sendEmail(form){
         // Enviar el formulario usando EmailJS
         emailjs.sendForm(serviceID, templateID, this)
           .then(function() {
-            alert('Correo enviado con éxito!');
+            alert('Mail sent successfully!');
           }, function(error) {
-            alert('Error al enviar el correo: ' + JSON.stringify(error));
+            alert('Error sending email: ' + JSON.stringify(error));
           });
       }); 
 
