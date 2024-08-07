@@ -181,16 +181,16 @@ function switchLang(idioma) {
       console.error("Error al cargar el archivo de idioma:", error)
     );
 }
-let keyIp = 'b6acb3423b230dda578b3bce68f48ebc';
+let keyIp = /*'b6acb3423b230dda578b3bce68f48ebc'*/null;
 if (keyIp !== null) {
   // Función para obtener la geolocalización y cambiar el idioma
-  fetch(`http://api.ipstack.com/check?access_key=${keyIp}`)
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data);
-      setLanguageBasedOnCountry(data.country_code);
-    })
-    .catch((error) => console.error("Error:", error));
+  //fetch(`http://api.ipstack.com/check?access_key=${keyIp}`)
+  //  .then((response) => response.json())
+  //  .then((data) => {
+  //    console.log(data);
+  //    setLanguageBasedOnCountry(data.country_code);
+  //  })
+  //  .catch((error) => console.error("Error:", error));
 } else {
   let getLang = localStorage.getItem("lang");
   document.getElementById("selector-lang").value = getLang;
