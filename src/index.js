@@ -197,7 +197,9 @@ function setLanguageBasedOnCountry(countryCode) {
  document
   .getElementById("selector-lang").value = language;
 }
-}catch(error){}
+}catch(error){
+ switchLang(localStorage.getItem('lang'));
+}
 
 sendEmail("form-header");
 sendEmail("form-last");
