@@ -181,7 +181,7 @@ function switchLang(idioma) {
       console.error("Error al cargar el archivo de idioma:", error)
     );
 }
-let keyIp = /*'b6acb3423b230dda578b3bce68f48ebc'*/null;
+let keyIp = 'b6acb3423b230dda578b3bce68f48ebc';
 if (keyIp !== null) {
   // Función para obtener la geolocalización y cambiar el idioma
   fetch(`http://api.ipstack.com/check?access_key=${keyIp}`)
