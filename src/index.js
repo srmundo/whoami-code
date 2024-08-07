@@ -4,7 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const target3 = document.getElementById("target3");
   const target4 = document.getElementById("target4");
   const header = document.getElementById("header");
-
+  if(!localStorage.getItem('lang')){
+    localStorage.setItem('lang', 'en');
+  }
   const options = {
     root: null, // Esto es el viewport
     rootMargin: "0px",
@@ -78,9 +80,13 @@ document
   .getElementById("selector-lang")
   .addEventListener("change", function () {
     const idioma = this.value;
-    switchLang(idioma);
+    let lang = localStorage.setItem('lang', idioma);
+    let getLang = localStorage.getItem('lang');
+    switchLang(getLang);
   });
+
 function switchLang(idioma) {
+    
     let titleHead = document.getElementById("title-head");
     let elementsAll = document.childNodes[1].childNodes[2].children;
     let nav = elementsAll[1];
@@ -165,6 +171,30 @@ function switchLang(idioma) {
         console.error("Error al cargar el archivo de idioma:", error)
       );
   
+}
+   // Función para obtener la geolocalización y cambiar el idioma
+ fetch('http://api.ipstack.com/check?access_key=null')
+ .then(response => response.json())
+ .then(data => {
+     console.log(data);
+     setLanguageBasedOnCountry(data.country_code);
+ })
+ .catch(error => console.error('Error:', error));
+
+function setLanguageBasedOnCountry(countryCode) {
+ const languages = {
+     'US': 'en', 
+     'GB': 'en', 
+     'ES': 'es', 
+     'PT': 'pt', 
+     'BR': 'pt'
+ };
+ let getLang = localStorage.getItem('lang');
+
+ const language = languages[countryCode] || getLang;
+ switchLang(language);
+ document
+  .getElementById("selector-lang").value = language;
 }
 
 sendEmail("form-header");
