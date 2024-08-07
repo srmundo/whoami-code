@@ -182,6 +182,9 @@ try{
  })
  .catch(error => console.error('Error:', error));
 
+}catch(error){
+  switchLang(localStorage.getItem('lang'));
+ }
 function setLanguageBasedOnCountry(countryCode) {
  const languages = {
      'US': 'en', 
@@ -196,9 +199,6 @@ function setLanguageBasedOnCountry(countryCode) {
  switchLang(language);
  document
   .getElementById("selector-lang").value = language;
-}
-}catch(error){
- switchLang(localStorage.getItem('lang'));
 }
 
 sendEmail("form-header");
