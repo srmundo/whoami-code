@@ -73,5 +73,63 @@ function sendEmail(form){
 
 }
 
+function switchLang(){
+    document.getElementById('selector-lang').addEventListener('change', function() {
+        const idioma = this.value;
+        cambiarIdioma(idioma);
+      });
+      
+      function cambiarIdioma(idioma) {
+        let titleHead = document.getElementById("title-head");
+        let elementsAll = document.childNodes[1].childNodes[2].children;
+        let nav = elementsAll[1];
+        let header = elementsAll[2]
+        let section1 = elementsAll[3]
+        let section2 = elementsAll[4]
+        let section3 = elementsAll[5]
+        let section5 = elementsAll[6]
+
+        fetch(`lang/${idioma}.json`)
+          .then(response => response.json())
+          .then(data => {
+            nav.children[1].children[0].children[0].children[0].children[1].innerHTML = data.started;
+            nav.children[1].children[0].children[1].children[0].children[1].innerHTML = data.servicios;
+            nav.children[1].children[0].children[2].children[0].children[1].innerHTML = data["why-we"];
+            nav.children[1].children[0].children[3].children[0].children[1].innerHTML = data["contact-us"];
+
+            header.children[1].children[0].children[0].children[0].innerHTML = data.transforma;
+            header.children[1].children[0].children[0].children[1].innerHTML = data.innovacion;
+
+            header.children[1].children[0].children[1].children[0].children[1].innerHTML = data["enviar_whatsapp"];
+            header.children[1].children[0].children[1].children[2].innerHTML = data["envianos_correo"];
+            header.children[1].children[0].children[1].children[4].children[0].children[0].innerHTML = data.nombre;
+            header.children[1].children[0].children[1].children[4].children[1].children[0].innerHTML = data["correo_electronico"];
+            header.children[1].children[0].children[1].children[4].children[2].children[0].innerHTML = data.mensaje;
+            header.children[1].children[0].children[1].children[4].children[3].innerHTML = data["enviar_correo"];
+            
+            section1.children[0].children[0].innerHTML = data.bienvenido;
+            section1.children[0].children[1].children[0].innerHTML = data.introduccion;
+            section2.children[0].children[0].innerHTML = data.servicios;
+            section2.children[0].children[1].children[0].children[0].children[0].innerHTML = data["desarrollo_software"];
+            section2.children[0].children[1].children[0].children[1].innerHTML = data["descripcion_desarrollo_software"];
+            section2.children[0].children[1].children[1].children[0].children[0].innerHTML = data["diseno_web"];
+            section2.children[0].children[1].children[1].children[1].innerHTML = data["descripcion_diseno_web"];
+            section2.children[0].children[1].children[2].children[0].children[0].innerHTML = data["optimizacion"];
+            section2.children[0].children[1].children[2].children[1].innerHTML = data["descripcion_optimizacion"];
+            section3.children[0].children[0].innerHTML = data["porque_elegirnos"];
+            section3.children[0].children[1].children[0].children[0].innerHTML = data.experiencia;
+            section3.children[0].children[1].children[0].children[1].innerHTML = data["soluciones_personalizadas"];
+            section3.children[0].children[1].children[0].children[2].innerHTML = data["enfoque_resultados"];
+            section3.children[0].children[1].children[0].children[3].innerHTML = data["compromiso_calidad"];
+         
+            
+            console.log(section3.children[0].children[1].children[0].children)
+            
+          })
+          .catch(error => console.error('Error al cargar el archivo de idioma:', error));
+      }
+}
+
 sendEmail("form-header");
 sendEmail("form-last");
+switchLang();
