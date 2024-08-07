@@ -172,6 +172,7 @@ function switchLang(idioma) {
       );
   
 }
+try{
    // Función para obtener la geolocalización y cambiar el idioma
  fetch('http://api.ipstack.com/check?access_key=null')
  .then(response => response.json())
@@ -196,6 +197,7 @@ function setLanguageBasedOnCountry(countryCode) {
  document
   .getElementById("selector-lang").value = language;
 }
+}catch(error){}
 
 sendEmail("form-header");
 sendEmail("form-last");
