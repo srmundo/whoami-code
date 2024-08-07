@@ -4,9 +4,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const target3 = document.getElementById("target3");
   const target4 = document.getElementById("target4");
   const header = document.getElementById("header");
-  if(!localStorage.getItem('lang')){
-    localStorage.setItem('lang', 'en');
+
+  if (!localStorage.getItem("lang")) {
+    localStorage.setItem("lang", "en");
+    let getLang = localStorage.getItem("lang");
+    document.getElementById("selector-lang").value = getLang;
+    switchLang(getLang);
   }
+
   const options = {
     root: null, // Esto es el viewport
     rootMargin: "0px",
@@ -80,125 +85,130 @@ document
   .getElementById("selector-lang")
   .addEventListener("change", function () {
     const idioma = this.value;
-    let lang = localStorage.setItem('lang', idioma);
-    let getLang = localStorage.getItem('lang');
+    localStorage.setItem("lang", idioma);
+    let getLang = localStorage.getItem("lang");
     switchLang(getLang);
   });
 
 function switchLang(idioma) {
-    
-    let titleHead = document.getElementById("title-head");
-    let elementsAll = document.childNodes[1].childNodes[2].children;
-    let nav = elementsAll[1];
-    let header = elementsAll[2];
-    let section1 = elementsAll[3];
-    let section2 = elementsAll[4];
-    let section3 = elementsAll[5];
-    let section5 = elementsAll[6];
-    let section6 = elementsAll[7];
+  let titleHead = document.getElementById("title-head");
+  let elementsAll = document.childNodes[1].childNodes[2].children;
+  let nav = elementsAll[1];
+  let header = elementsAll[2];
+  let section1 = elementsAll[3];
+  let section2 = elementsAll[4];
+  let section3 = elementsAll[5];
+  let section5 = elementsAll[6];
+  let section6 = elementsAll[7];
 
-    fetch(`lang/${idioma}.json`)
-      .then((response) => response.json())
-      .then((data) => {
-        nav.children[1].children[0].children[0].children[0].children[1].innerHTML =
-          data.started;
-        nav.children[1].children[0].children[1].children[0].children[1].innerHTML =
-          data.servicios;
-        nav.children[1].children[0].children[2].children[0].children[1].innerHTML =
-          data["why-we"];
-        nav.children[1].children[0].children[3].children[0].children[1].innerHTML =
-          data["contact-us"];
+  fetch(`lang/${idioma}.json`)
+    .then((response) => response.json())
+    .then((data) => {
+      nav.children[1].children[0].children[0].children[0].children[1].innerHTML =
+        data.started;
+      nav.children[1].children[0].children[1].children[0].children[1].innerHTML =
+        data.servicios;
+      nav.children[1].children[0].children[2].children[0].children[1].innerHTML =
+        data["why-we"];
+      nav.children[1].children[0].children[3].children[0].children[1].innerHTML =
+        data["contact-us"];
 
-        header.children[1].children[0].children[0].children[0].innerHTML =
-          data.transforma;
-        header.children[1].children[0].children[0].children[1].innerHTML =
-          data.innovacion;
+      header.children[1].children[0].children[0].children[0].innerHTML =
+        data.transforma;
+      header.children[1].children[0].children[0].children[1].innerHTML =
+        data.innovacion;
 
-        header.children[1].children[0].children[1].children[0].children[1].innerHTML =
-          data["enviar_whatsapp"];
-        header.children[1].children[0].children[1].children[2].innerHTML =
-          data["envianos_correo"];
-        header.children[1].children[0].children[1].children[4].children[0].children[0].innerHTML =
-          data.nombre;
-        header.children[1].children[0].children[1].children[4].children[1].children[0].innerHTML =
-          data["correo_electronico"];
-        header.children[1].children[0].children[1].children[4].children[2].children[0].innerHTML =
-          data.mensaje;
-        header.children[1].children[0].children[1].children[4].children[3].innerHTML =
-          data["enviar_correo"];
+      header.children[1].children[0].children[1].children[0].children[1].innerHTML =
+        data["enviar_whatsapp"];
+      header.children[1].children[0].children[1].children[2].innerHTML =
+        data["envianos_correo"];
+      header.children[1].children[0].children[1].children[4].children[0].children[0].innerHTML =
+        data.nombre;
+      header.children[1].children[0].children[1].children[4].children[1].children[0].innerHTML =
+        data["correo_electronico"];
+      header.children[1].children[0].children[1].children[4].children[2].children[0].innerHTML =
+        data.mensaje;
+      header.children[1].children[0].children[1].children[4].children[3].innerHTML =
+        data["enviar_correo"];
 
-        section1.children[0].children[0].innerHTML = data.bienvenido;
-        section1.children[0].children[1].children[0].innerHTML =
-          data.introduccion;
-        section2.children[0].children[0].innerHTML = data.servicios;
-        section2.children[0].children[1].children[0].children[0].children[0].innerHTML =
-          data["desarrollo_software"];
-        section2.children[0].children[1].children[0].children[1].innerHTML =
-          data["descripcion_desarrollo_software"];
-        section2.children[0].children[1].children[1].children[0].children[0].innerHTML =
-          data["diseno_web"];
-        section2.children[0].children[1].children[1].children[1].innerHTML =
-          data["descripcion_diseno_web"];
-        section2.children[0].children[1].children[2].children[0].children[0].innerHTML =
-          data["optimizacion"];
-        section2.children[0].children[1].children[2].children[1].innerHTML =
-          data["descripcion_optimizacion"];
-        section3.children[0].children[0].innerHTML = data["porque_elegirnos"];
-        section3.children[0].children[1].children[0].children[0].innerHTML =
-          data.experiencia;
-        section3.children[0].children[1].children[0].children[1].innerHTML =
-          data["soluciones_personalizadas"];
-        section3.children[0].children[1].children[0].children[2].innerHTML =
-          data["enfoque_resultados"];
-        section3.children[0].children[1].children[0].children[3].innerHTML =
-          data["compromiso_calidad"];
-          section5.children[0].children[0].innerHTML = data.testimonios;
-          section5.children[0].children[1].children[0].innerHTML = data.testimonio1;
-          section5.children[0].children[2].children[0].innerHTML = data.testimonio2;
-          section6.children[0].children[0].innerHTML = data.contacto;
-          section6.children[0].children[1].innerHTML = data.descripcion_contacto;
-          section6.children[0].children[2].children[0].children[0].innerHTML = data.nombre;
-          section6.children[0].children[2].children[1].children[0].innerHTML = data.correo_electronico;
-          section6.children[0].children[2].children[2].children[0].innerHTML = data.mensaje;
-          section6.children[0].children[2].children[3].children[0].innerHTML = data.enviar_correo;
-          section6.children[0].children[2].children[3].children[1].innerHTML = data.tambien_puedes;
-          section6.children[0].children[2].children[3].children[2].children[1].innerHTML = data.enviar_whatsapp;
-          elementsAll[8].children[0]. innerHTML = data.footer;
-          elementsAll[8].children[1]. innerHTML = data.redes_sociales;
-        console.log(elementsAll[8].children);
-      })
-      .catch((error) =>
-        console.error("Error al cargar el archivo de idioma:", error)
-      );
-  
+      section1.children[0].children[0].innerHTML = data.bienvenido;
+      section1.children[0].children[1].children[0].innerHTML =
+        data.introduccion;
+      section2.children[0].children[0].innerHTML = data.servicios;
+      section2.children[0].children[1].children[0].children[0].children[0].innerHTML =
+        data["desarrollo_software"];
+      section2.children[0].children[1].children[0].children[1].innerHTML =
+        data["descripcion_desarrollo_software"];
+      section2.children[0].children[1].children[1].children[0].children[0].innerHTML =
+        data["diseno_web"];
+      section2.children[0].children[1].children[1].children[1].innerHTML =
+        data["descripcion_diseno_web"];
+      section2.children[0].children[1].children[2].children[0].children[0].innerHTML =
+        data["optimizacion"];
+      section2.children[0].children[1].children[2].children[1].innerHTML =
+        data["descripcion_optimizacion"];
+      section3.children[0].children[0].innerHTML = data["porque_elegirnos"];
+      section3.children[0].children[1].children[0].children[0].innerHTML =
+        data.experiencia;
+      section3.children[0].children[1].children[0].children[1].innerHTML =
+        data["soluciones_personalizadas"];
+      section3.children[0].children[1].children[0].children[2].innerHTML =
+        data["enfoque_resultados"];
+      section3.children[0].children[1].children[0].children[3].innerHTML =
+        data["compromiso_calidad"];
+      section5.children[0].children[0].innerHTML = data.testimonios;
+      section5.children[0].children[1].children[0].innerHTML = data.testimonio1;
+      section5.children[0].children[2].children[0].innerHTML = data.testimonio2;
+      section6.children[0].children[0].innerHTML = data.contacto;
+      section6.children[0].children[1].innerHTML = data.descripcion_contacto;
+      section6.children[0].children[2].children[0].children[0].innerHTML =
+        data.nombre;
+      section6.children[0].children[2].children[1].children[0].innerHTML =
+        data.correo_electronico;
+      section6.children[0].children[2].children[2].children[0].innerHTML =
+        data.mensaje;
+      section6.children[0].children[2].children[3].children[0].innerHTML =
+        data.enviar_correo;
+      section6.children[0].children[2].children[3].children[1].innerHTML =
+        data.tambien_puedes;
+      section6.children[0].children[2].children[3].children[2].children[1].innerHTML =
+        data.enviar_whatsapp;
+      elementsAll[8].children[0].innerHTML = data.footer;
+      elementsAll[8].children[1].innerHTML = data.redes_sociales;
+      console.log(elementsAll[8].children);
+    })
+    .catch((error) =>
+      console.error("Error al cargar el archivo de idioma:", error)
+    );
 }
-try{
-   // Función para obtener la geolocalización y cambiar el idioma
- fetch('http://api.ipstack.com/check?access_key=null')
- .then(response => response.json())
- .then(data => {
-     console.log(data);
-     setLanguageBasedOnCountry(data.country_code);
- })
- .catch(error => console.error('Error:', error));
-
-}catch(error){
-  switchLang(localStorage.getItem('lang'));
- }
+let keyIp = 'b6acb3423b230dda578b3bce68f48ebc';
+if (keyIp !== null) {
+  // Función para obtener la geolocalización y cambiar el idioma
+  fetch(`http://api.ipstack.com/check?access_key=${keyIp}`)
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+      setLanguageBasedOnCountry(data.country_code);
+    })
+    .catch((error) => console.error("Error:", error));
+} else {
+  let getLang = localStorage.getItem("lang");
+  document.getElementById("selector-lang").value = getLang;
+  switchLang(getLang);
+}
 function setLanguageBasedOnCountry(countryCode) {
- const languages = {
-     'US': 'en', 
-     'GB': 'en', 
-     'ES': 'es', 
-     'PT': 'pt', 
-     'BR': 'pt'
- };
- let getLang = localStorage.getItem('lang');
+  const languages = {
+    US: "en",
+    GB: "en",
+    ES: "es",
+    PT: "pt",
+    BR: "pt",
+  };
+  let getLang = localStorage.getItem("lang");
 
- const language = languages[countryCode] || getLang;
- switchLang(language);
- document
-  .getElementById("selector-lang").value = language;
+  const language = languages[countryCode] || getLang;
+  switchLang(language);
+  document.getElementById("selector-lang").value = language;
 }
 
 sendEmail("form-header");
