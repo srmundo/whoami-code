@@ -153,6 +153,9 @@
     .cont-represent h1 strong{
         font-family: dogica-bold;
     }
+    .btn-menu-expanded svg{
+        display: none;
+    }
     nav{
         display: flex;
         align-items: center;
@@ -547,18 +550,30 @@
         left: 0%;
         height: 8vh;
         z-index: 2;
-        overflow: hidden;
     }
     .letter {
         display: inline-block;
         opacity: 0;
     }
+    .btn-menu-expanded svg{
+        fill: #DBF745;
+        width: 30px;
+        height: 30px;
+    }
+    .menu-expanded{
+        position: absolute;
+        top: 80%;
+        right: 0%;
+        height: 40vh;
+        background-color: #530485;
+        z-index: 3000;
+        display: none;/*flex*/
+        flex-direction: column;
+        padding: 10px;
+        width: 90%;
+    }
     nav .cont-menubar ul{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
         list-style: none;
-        width: 100%;
     }
     nav .cont-menubar ul li{
         margin-left: 5px;
@@ -569,9 +584,10 @@
         color: #DBF745;
         font-family: roboto-medium;
         display: flex;
-        justify-content: space-around;
+        justify-content: left;
         align-items: center;
         transition: all 0.3s;
+        text-align: left;
     }
     nav .cont-menubar ul li a:hover{
         background-color: #751cac;
@@ -965,18 +981,30 @@
         left: 0%;
         height: 8vh;
         z-index: 2;
-        overflow: hidden;
     }
     .letter {
         display: inline-block;
         opacity: 0;
     }
+    .btn-menu-expanded svg{
+        fill: #DBF745;
+        width: 30px;
+        height: 30px;
+    }
+    .menu-expanded{
+        position: absolute;
+        top: 80%;
+        right: 0%;
+        height: 40vh;
+        background-color: #530485;
+        z-index: 3000;
+        display: none;/*flex*/
+        flex-direction: column;
+        padding: 10px;
+        width: 90%;
+    }
     nav .cont-menubar ul{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
         list-style: none;
-        width: 100%;
     }
     nav .cont-menubar ul li{
         margin-left: 5px;
@@ -987,7 +1015,7 @@
         color: #DBF745;
         font-family: roboto-medium;
         display: flex;
-        justify-content: space-around;
+        justify-content: left;
         align-items: center;
         transition: all 0.3s;
     }
@@ -1202,7 +1230,7 @@
     }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+@media only screen and (min-width: 1025px) and (max-width: 4200px) {
     /* Estilos para pantallas pequeñas y medianas */
     body {
         font-family: Arial, sans-serif;
@@ -1357,6 +1385,9 @@
     }
     .cont-represent h1 strong{
         font-family: dogica-bold;
+    }
+    .btn-menu-expanded svg{
+        display: none;
     }
     nav{
         display: flex;

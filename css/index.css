@@ -370,3 +370,6 @@
         resize: none;
     }
 }
+.btn-menu-expanded{
+    cursor: pointer;
+}

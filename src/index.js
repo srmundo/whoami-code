@@ -227,3 +227,13 @@ function setLanguageBasedOnCountry(countryCode) {
 
 sendEmail("form-header");
 sendEmail("form-last");
+
+let menuExp = document.querySelector('.menu-expanded');
+menuExp.style.display = 'none'; 
+document.querySelector('.btn-menu-expanded').addEventListener('click', ()=>{
+  if(menuExp.style.display === 'none'){
+    menuExp.style.display = 'flex';
+  }else if (menuExp.style.display === 'flex') {
+    menuExp.style.display = 'none';
+  }
+});
