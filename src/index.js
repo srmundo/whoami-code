@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const options = {
     root: null, // Esto es el viewport
     rootMargin: "0px",
-    threshold: 0.5, // Umbral de visibilidad en el viewport (0.5 significa 50% visible)
+    threshold: 0.2, // Umbral de visibilidad en el viewport (0.5 significa 50% visible)
   };
 
   function scrollHander(target, selector, negX, posX, clock = false) {
@@ -38,11 +38,20 @@ document.addEventListener("DOMContentLoaded", function () {
     const observer = new IntersectionObserver(callback, options);
     observer.observe(target);
   }
-  scrollHander(header, "#header", 0, 0, true);
-  scrollHander(target, "#target", -100, 50);
-  scrollHander(target2, "#target2", 150, -0);
-  scrollHander(target3, "#target3", -100, 50);
+  if (window.innerWidth <= 480 || window.innerWidth <= 897) {
+    scrollHander(target, "#target", 10, 0);
+  scrollHander(target3, "#target3", 10, 0);
+  scrollHander(target4, "#target4", 10, 0);
+  scrollHander(target2, "#target2", 10, 0);
+  } else if (window.innerWidth <= 768){
+
+  } else {
+    scrollHander(target2, "#target2", 150, -0);
   scrollHander(target4, "#target4", 150, -0);
+  scrollHander(target, "#target", -100, 50);
+  scrollHander(target3, "#target3", -100, 50);
+
+  }
 });
 
 function sendWhatsapp() {
@@ -51,6 +60,11 @@ function sendWhatsapp() {
 
   document.querySelector(
     ".whatsapp-button"
+  ).href = `https://api.whatsapp.com/send?phone=${554198262582}&text=${encodeURIComponent(
+    message
+  )}`;
+  document.querySelector(
+    "#whatsapp-button-last"
   ).href = `https://api.whatsapp.com/send?phone=${554198262582}&text=${encodeURIComponent(
     message
   )}`;
@@ -181,7 +195,7 @@ function switchLang(idioma) {
       console.error("Error al cargar el archivo de idioma:", error)
     );
 }
-let keyIp = /*'b6acb3423b230dda578b3bce68f48ebc'*/null;
+let keyIp = /*'b6acb3423b230dda578b3bce68f48ebc'*/ null;
 if (keyIp !== null) {
   // Función para obtener la geolocalización y cambiar el idioma
   //fetch(`http://api.ipstack.com/check?access_key=${keyIp}`)
