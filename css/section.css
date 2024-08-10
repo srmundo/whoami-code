@@ -81,17 +81,14 @@
     margin-bottom: 30px;
   }
   .ui-ux-services {
-    background: linear-gradient(135deg, #fe029d10 50%, transparent 0),
-      linear-gradient(-135deg, #fe029d0c 50%, transparent 0);
-    background-size: 2em 2em;
-    background-color: #ffffff;
+    background-color: #930480;
     margin-top: 50px;
   }
   .ui-ux-services .title-ui-ux-services {
     margin-top: 20px;
   }
   .ui-ux-services .title-ui-ux-services h3 {
-    color: #5529f2;
+    color: #f3f2f7;
     font-size: calc(25px + 1vw);
     font-family: roboto-bold;
     text-align: left;
@@ -99,7 +96,7 @@
   .ui-ux-services .title-ui-ux-services p {
     font-size: calc(14px + 1vw);
     font-family: roboto-medium;
-    color: #312777;
+    color: #f3f2f7;
     text-align: left;
     margin-bottom: 30px;
   }
@@ -112,7 +109,7 @@
   }
   .ui-ux-services ul li p {
     font-size: calc(14px + 1vw);
-    color: #312777;
+    color: #f3f2f7;
     font-family: roboto-bold;
     text-align: left;
     margin-bottom: 20px;
@@ -489,17 +486,14 @@
     margin-bottom: 30px;
   }
   .ui-ux-services {
-    background: linear-gradient(135deg, #fe029d10 50%, transparent 0),
-      linear-gradient(-135deg, #fe029d0c 50%, transparent 0);
-    background-size: 2em 2em;
-    background-color: #ffffff;
+    background-color: #930480;
     margin-top: 50px;
   }
   .ui-ux-services .title-ui-ux-services {
     margin-top: 20px;
   }
   .ui-ux-services .title-ui-ux-services h3 {
-    color: #5529f2;
+    color: #f3f2f7;
     font-size: calc(25px + 1vw);
     font-family: roboto-bold;
     text-align: left;
@@ -507,7 +501,7 @@
   .ui-ux-services .title-ui-ux-services p {
     font-size: calc(14px + 1vw);
     font-family: roboto-medium;
-    color: #312777;
+    color: #ecebf0;
     text-align: left;
     margin-bottom: 30px;
   }
@@ -520,7 +514,7 @@
   }
   .ui-ux-services ul li p {
     font-size: calc(14px + 1vw);
-    color: #312777;
+    color: #f9f9f9;
     font-family: roboto-bold;
     text-align: left;
     margin-bottom: 20px;

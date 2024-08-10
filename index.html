@@ -6,6 +6,7 @@
     <title>WhoamiCode - design and development</title>
     <link rel="stylesheet" href="./css/index.css">
     <script type="module" src="./vendor/anime.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 <body>
     <div class="container" id="container">
@@ -165,7 +166,7 @@
                     <h2>Tell us a little about your project</h2>
                     <p>If you have any questions, feel free to reach out to us by filling out the form below. We'll get back to you as soon as possible.</p>
 
-                    <form>
+                    <form id="contact-form">
                         <div class="form-group">
                             <label for="name">Full Name</label>
                             <input type="text" id="name" name="name" placeholder="Your Full Name" required>
@@ -231,5 +232,6 @@
     <script type="module" src="./src/nav.js"></script>
     <script type="module" src="./modules/whatsapp-button.js"></script>
     <script type="module" src="./modules/processWork.js"></script>
+    <script type="module" src="./modules/email.js"></script>
 </body>
 </html>
