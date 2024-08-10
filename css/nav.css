@@ -1,0 +1,179 @@
+@media only screen and (min-width: 50px) and (max-width: 1024px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 10vh;
+    background-color: #f2f2f2;
+    z-index: 1000;
+  }
+  nav .container-brand h1 {
+    font-family: roboto-black;
+    font-size: calc(1.1rem + 1vw);
+    margin-left: 10px;
+  }
+
+  nav .container-navbar {
+    display: block;
+    position: relative;
+  }
+  nav .container-navbar button {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5529f2;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  nav .container-navbar button svg {
+    width: 30px;
+    height: 30px;
+    fill: #f2f2f2;
+  }
+  nav .container-navbar .menu-expanded {
+    background-color: #f2f2f2;
+    position: absolute;
+    top: 100%;
+    right: -0%;
+    z-index: 3000;
+    height: 90vh;
+    width: 95vw;
+    display: flex;
+    align-items: top;
+    flex-direction: column;
+    justify-content: top;
+    padding-top: 10px;
+    gap: 10px;
+    transition: all 0.5s;
+  }
+  .menu-hidden {
+    background-color: #f2f2f2;
+    position: absolute;
+    top: 100%;
+    right: -2000%;
+    z-index: 3000;
+    height: 90vh;
+    width: 95vw;
+    display: flex;
+    align-items: top;
+    flex-direction: column;
+    justify-content: top;
+    padding-top: 10px;
+    gap: 10px;
+    transition: all 0.5s;
+  }
+  nav .container-navbar .menu-expanded li a {
+    display: block;
+    margin: auto;
+    text-align: left;
+    width: 90%;
+    padding: 10px;
+    font-family: roboto-medium;
+    font-size: calc(1rem + 1vw);
+    color: #5529f2;
+  }
+
+  nav .container-navbar .menu-expanded li select {
+    background-color: #5529f2;
+    width: 95%;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    font-family: roboto-medium;
+    font-size: calc(1rem + 1vw);
+    color: #f2f2f2;
+  }
+  nav .container-navbar .menu-hidden li a {
+    display: block;
+    margin: auto;
+    text-align: left;
+    width: 90%;
+    padding: 10px;
+    font-family: roboto-medium;
+    font-size: calc(1rem + 1vw);
+    color: #5529f2;
+  }
+
+  nav .container-navbar .menu-hidden li select {
+    background-color: #5529f2;
+    width: 95%;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    font-family: roboto-medium;
+    font-size: calc(1rem + 1vw);
+    color: #f2f2f2;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 5000px) {
+  /* Estilos para pantallas grandes */
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    background-color: #f2f2f2;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 1000;
+  }
+  nav .container-brand h1 {
+    font-family: roboto-black;
+    font-size: calc(1.1rem + 1vw);
+    margin-left: 10px;
+    background: #a7042a;
+    background: linear-gradient(to right, #a7042a 0%, #930480 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  nav .container-navbar button {
+    display: none;
+  }
+  .menu-hidden {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+    transition: all 0.5s;
+    margin-right: 10px;
+  }
+  nav .container-navbar .menu-hidden li a {
+    display: block;
+    margin: auto;
+    text-align: left;
+    padding: 5px;
+    font-family: roboto-medium;
+    font-size: calc(2px + 1vw);
+    color: #5529f2;
+  }
+  nav .container-navbar .menu-hidden li a:hover {
+    color: #18055c;
+  }
+
+  nav .container-navbar .menu-hidden li select {
+    background-color: #5529f2;
+    border-radius: 8px;
+    border: none;
+    font-family: roboto-medium;
+    font-size: calc(2px + 1vw);
+    color: #f2f2f2;
+    padding: 5px;
+    cursor: pointer;
+  }
+  nav .container-navbar .menu-hidden li select:hover {
+    background-color: #6841f3;
+  }
+}

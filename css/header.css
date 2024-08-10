@@ -1,0 +1,348 @@
+@media only screen and (min-width: 50px) and (max-width: 700px) {
+  header {
+    margin-top: 10vh;
+    width: 100%;
+    height: 89vh;
+    background: rgb(102, 9, 76);
+    background: -moz-linear-gradient(
+      90deg,
+      rgba(102, 9, 76, 1) 0%,
+      rgba(85, 41, 242, 1) 45%,
+      rgba(61, 9, 121, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      90deg,
+      rgba(102, 9, 76, 1) 0%,
+      rgba(85, 41, 242, 1) 45%,
+      rgba(61, 9, 121, 1) 100%
+    );
+    background: linear-gradient(
+      90deg,
+      rgba(102, 9, 76, 1) 0%,
+      rgba(85, 41, 242, 1) 45%,
+      rgba(61, 9, 121, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#66094c",endColorstr="#3d0979",GradientType=1);
+  }
+  header .container-header {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  header .container-header .container-image img {
+    display: none;
+  }
+  header .container-header .container-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+  }
+  header .container-header .container-title h1 {
+    font-family: roboto-bold;
+    font-size: calc(40px + 1vw);
+    padding: 20px;
+    color: #ffffff;
+    text-align: left;
+  }
+  header .container-header .container-title h2 {
+    font-family: roboto-medium;
+    font-size: calc(20px + 1vw);
+    padding: 20px;
+    text-align: right;
+    color: #ffffff;
+  }
+  header .container-header .container-title .img-logo-whoami {
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-image: url("../assets/image/logo.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #e4e4e4;
+    border-radius: 50px;
+    border: 1px solid #ffffff38;
+    box-shadow: 1px 1px 6px #000;
+  }
+  .whatsapp-button {
+    display: flex;
+    border: 1px solid #ffffff7e;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px #000;
+    background-color: #25d366; /* Color verde de WhatsApp */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    width: 80%;
+  }
+  .whatsapp-button span p {
+    font-size: calc(13px + 1vw);
+    font-family: roboto-medium;
+  }
+  .whatsapp-button span img {
+    width: 40px;
+    height: 40px;
+    display: block;
+  }
+  .whatsapp-button span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    gap: 20px;
+  }
+  .whatsapp-button:hover {
+    background-color: #20b857; /* Color más oscuro al pasar el mouse */
+  }
+
+  
+
+}
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+  header {
+    margin-top: 10vh;
+    width: 100%;
+    height: 89vh;
+    background: rgb(102, 9, 76);
+    background: -moz-linear-gradient(
+      90deg,
+      rgba(102, 9, 76, 1) 0%,
+      rgba(85, 41, 242, 1) 45%,
+      rgba(61, 9, 121, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      90deg,
+      rgba(102, 9, 76, 1) 0%,
+      rgba(85, 41, 242, 1) 45%,
+      rgba(61, 9, 121, 1) 100%
+    );
+    background: linear-gradient(
+      90deg,
+      rgba(102, 9, 76, 1) 0%,
+      rgba(85, 41, 242, 1) 45%,
+      rgba(61, 9, 121, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#66094c",endColorstr="#3d0979",GradientType=1);
+  }
+  header .container-header {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  header .container-header .container-image img {
+    display: none;
+  }
+  header .container-header .container-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+  }
+  header .container-header .container-title h1 {
+    font-family: roboto-bold;
+    font-size: calc(40px + 1vw);
+    padding: 20px;
+    color: #ffffff;
+    text-align: left;
+  }
+  header .container-header .container-title h2 {
+    font-family: roboto-medium;
+    font-size: calc(20px + 1vw);
+    padding: 20px;
+    text-align: right;
+    color: #ffffff;
+  }
+  header .container-header .container-title .img-logo-whoami {
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-image: url("../assets/image/logo.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #e4e4e4;
+    border-radius: 50px;
+    border: 1px solid #ffffff38;
+    box-shadow: 1px 1px 6px #000;
+  }
+  .whatsapp-button {
+    display: flex;
+    border: 1px solid #ffffff7e;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px #000;
+    background-color: #25d366; /* Color verde de WhatsApp */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    width: 60%;
+  }
+  .whatsapp-button span p {
+    font-size: calc(13px + 1vw);
+    font-family: roboto-medium;
+  }
+  .whatsapp-button span img {
+    width: 40px;
+    height: 40px;
+    display: block;
+  }
+  .whatsapp-button span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    gap: 20px;
+  }
+  .whatsapp-button:hover {
+    background-color: #20b857; /* Color más oscuro al pasar el mouse */
+  }
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 5000px) {
+  header {
+    height: 80vh;
+    padding-top: 18vh;
+    background: rgb(102, 9, 76);
+    background: -moz-linear-gradient(
+      90deg,
+      rgba(102, 9, 76, 1) 0%,
+      rgba(85, 41, 242, 1) 45%,
+      rgba(61, 9, 121, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      90deg,
+      rgba(102, 9, 76, 1) 0%,
+      rgba(85, 41, 242, 1) 45%,
+      rgba(61, 9, 121, 1) 100%
+    );
+    background: linear-gradient(
+      90deg,
+      rgba(102, 9, 76, 1) 0%,
+      rgba(85, 41, 242, 1) 45%,
+      rgba(61, 9, 121, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#66094c",endColorstr="#3d0979",GradientType=1);
+  }
+  header .container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 90%;
+  }
+  header .container-header .container-image {
+    width: 30%;
+    height: 90%;
+    position: relative;
+    overflow: hidden;
+  }
+  header .container-header .container-image img {
+    box-shadow: 2px 2px 6px #000;
+    border: 1px solid #00000094;
+    top: 10%;
+    left: 0%;
+    position: absolute;
+    border-radius: 30px;
+    width: 90%;
+    object-fit: cover; /* Escalar la imagen y llenar el contenedor */
+    object-position: center; /* Centrar la imagen en el contenedor */
+    display: block; /* Eliminar cualquier espacio en blanco alrededor de la imagen */
+  }
+  header .container-header .container-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90%;
+    gap: 30px;
+    width: 60%;
+  }
+  header .container-header .container-title h1 {
+    font-size: calc(20px + 1vw);
+    text-align: right;
+    color: #ffffff;
+    text-shadow: 1px 1px 6px #000;
+    font-family: roboto-black;
+  }
+  header .container-header .container-title h2 {
+    font-size: calc(12px + 1vw);
+    text-align: left;
+    text-shadow: 1px 1px 6px #000;
+    font-family: roboto-bold;
+    color: #ffffff;
+  }
+  header .container-header .container-title .cont-logo {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .container-header .container-title .cont-logo .img-logo-whoami {
+    background-color: #e4e4e4;
+    width: 160px;
+    height: 160px;
+    display: block;
+    background-image: url("../assets/image/logo.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    border: 1px solid #ffffff38;
+    box-shadow: 1px 1px 6px #000;
+  }
+  .whatsapp-button {
+    display: inline-block;
+    border: 1px solid #ffffff7e;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px #000;
+    background-color: #25d366; /* Color verde de WhatsApp */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    width: 80%;
+  }
+  .whatsapp-button span p {
+    font-size: calc(5px + 1vw);
+    font-family: roboto-medium;
+  }
+  .whatsapp-button span img {
+    width: 40px;
+    height: 40px;
+    display: block;
+  }
+  .whatsapp-button span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 40px;
+    margin: auto;
+    gap: 20px;
+  }
+  .whatsapp-button:hover {
+    background-color: #20b857; /* Color más oscuro al pasar el mouse */
+  }
+}

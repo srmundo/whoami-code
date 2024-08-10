@@ -1,0 +1,11 @@
+@import url("./fonts.css");
+@import url("./global.css");
+@import url("./nav.css");
+@import url("./header.css");
+@import url("./section.css");
+@import url("./footer.css");
+.container{
+    display: block;
+    overflow-x: hidden;
+    width: 100vw;
+}
