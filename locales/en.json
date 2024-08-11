@@ -1,0 +1,121 @@
+{
+    "title": "WhoamiCode - design and development",
+    "nav": {
+        "brand": "WhoamiCode"
+    },
+    "menu": {
+        "about": "About us",
+        "services": "Services",
+        "process": "Work Process",
+        "contact": "Contact",
+        "blog": "Blog and resources",
+        "language": "Language"
+    },
+    "header": {
+        "title": "We transform your idea into a digital experience",
+        "subtitle": "We develop custom websites and applications that boost your business",
+        "whatsapp_button": "Tell us a little about your project"
+    },
+    "about": {
+        "heading": "About Us",
+        "text": "WhoamiCode is a leading web development company dedicated to creating innovative and user-friendly web solutions. Our team is committed to delivering high-quality results that help businesses thrive in the digital world."
+    },
+    "services": {
+        "custom_dev": {
+            "title": "Custom Web Development",
+            "text": "We provide tailored web development solutions designed to meet the specific needs of your business. From high-quality websites to complex platforms, we ensure that every project is unique and functional.",
+            "features": [
+                "Frontend and Backend Development",
+                "API Integration",
+                "Performance Optimization"
+            ]
+        },
+        "ui_ux": {
+            "title": "UI/UX Design",
+            "text": "We specialize in designing intuitive user interfaces and exceptional user experiences. We create engaging designs that not only capture attention but also facilitate navigation and maximize conversion.",
+            "features": [
+                "Wireframes and Prototypes",
+                "Responsive Design",
+                "Usability Testing"
+            ]
+        },
+        "support": {
+            "title": "Maintenance and Support",
+            "text": "We offer ongoing maintenance and support services to ensure your website or application runs smoothly. We handle updates, bug fixes, and continuous improvements to keep your project in top shape.",
+            "features": [
+                "Updates and Patches",
+                "Technical Support",
+                "Monitoring and Security"
+            ]
+        }
+    },
+    "process": {
+        "heading": "Our Work Process",
+        "steps": {
+            "step1": {
+                "title": "Step 1: Discovery",
+                "text": "We start by understanding your business needs and goals. During this phase, we conduct research, gather requirements, and identify key project objectives to ensure a clear and aligned vision.",
+                "tasks": [
+                    "Initial Consultation",
+                    "Requirement Gathering",
+                    "Goal Setting"
+                ]
+            },
+            "step2": {
+                "title": "Step 2: Design and Prototyping",
+                "text": "Our team creates wireframes and prototypes to visualize the project's design and functionality. We work closely with you to refine the design, ensuring it meets your expectations and provides an excellent user experience.",
+                "tasks": [
+                    "Wireframing",
+                    "UI/UX Design",
+                    "Prototyping"
+                ]
+            },
+            "step3": {
+                "title": "Step 3: Development",
+                "text": "In this phase, we bring the design to life by developing the website or application. Our development process includes coding, integrating necessary features, and ensuring that everything functions as intended.",
+                "tasks": [
+                    "Frontend and Backend Development",
+                    "Feature Integration",
+                    "Quality Assurance Testing"
+                ]
+            },
+            "step4": {
+                "title": "Step 4: Launch and Support",
+                "text": "Once development is complete, we prepare for the launch. We handle the deployment process and provide ongoing support to address any issues that arise and make any necessary improvements.",
+                "tasks": [
+                    "Deployment",
+                    "Post-Launch Support",
+                    "Performance Monitoring"
+                ]
+            }
+        }
+    },
+    "contact": {
+        "heading": "Tell us a little about your project",
+        "text": "If you have any questions, feel free to reach out to us by filling out the form below. We'll get back to you as soon as possible.",
+        "form": {
+            "name": "Full Name",
+            "email": "Email Address",
+            "message": "Message",
+            "submit": "Send Message"
+        },
+        "whatsapp_button": "Hire us"
+    },
+    "footer": {
+        "about": "WhoamiCode is a leading web development company dedicated to creating innovative and user-friendly web solutions. Our team is committed to delivering high-quality results that help businesses thrive in the digital world.",
+        "quick_links": {
+            "about": "About Us",
+            "services": "Services",
+            "process": "Work Process",
+            "contact": "Contact Us"
+        },
+        "contact_info": "iwhoamicode@gmail.com",
+        "social": {
+            "facebook": "Facebook",
+            "twitter": "Twitter",
+            "linkedin": "LinkedIn",
+            "instagram": "Instagram"
+        },
+        "copyright": "&copy; 2024 WhoamiCode. All Rights Reserved."
+    }
+}

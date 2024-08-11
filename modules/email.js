@@ -16,6 +16,6 @@
       .then(function() {
         alert('Mail sent successfully!');
       }, function(error) {
-        alert('Error sending email: ' + JSON.stringify(error));
+        alert(`Error sending email: ${JSON.stringify(error)}`);
       });
   });

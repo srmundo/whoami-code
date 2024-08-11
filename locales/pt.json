@@ -1,0 +1,121 @@
+{
+    "title": "WhoamiCode - design e desenvolvimento",
+    "nav": {
+        "brand": "WhoamiCode"
+    },
+    "menu": {
+        "about": "Sobre nós",
+        "services": "Serviços",
+        "process": "Processo de Trabalho",
+        "contact": "Contato",
+        "blog": "Blog e recursos",
+        "language": "Idioma"
+    },
+    "header": {
+        "title": "Transformamos sua ideia em uma experiência digital",
+        "subtitle": "Desenvolvemos sites e aplicativos personalizados que impulsionam seu negócio",
+        "whatsapp_button": "Conte-nos um pouco sobre seu projeto"
+    },
+    "about": {
+        "heading": "Sobre Nós",
+        "text": "WhoamiCode é uma empresa líder em desenvolvimento web dedicada a criar soluções web inovadoras e fáceis de usar. Nossa equipe está comprometida em entregar resultados de alta qualidade que ajudam as empresas a prosperar no mundo digital."
+    },
+    "services": {
+        "custom_dev": {
+            "title": "Desenvolvimento Web Personalizado",
+            "text": "Oferecemos soluções de desenvolvimento web personalizadas projetadas para atender às necessidades específicas do seu negócio. Desde sites de alta qualidade até plataformas complexas, garantimos que cada projeto seja único e funcional.",
+            "features": [
+                "Desenvolvimento Frontend e Backend",
+                "Integração de API",
+                "Otimização de Desempenho"
+            ]
+        },
+        "ui_ux": {
+            "title": "Design UI/UX",
+            "text": "Especializamos em criar interfaces de usuário intuitivas e experiências excepcionais. Criamos designs envolventes que não apenas capturam a atenção, mas também facilitam a navegação e maximizam a conversão.",
+            "features": [
+                "Wireframes e Protótipos",
+                "Design Responsivo",
+                "Testes de Usabilidade"
+            ]
+        },
+        "support": {
+            "title": "Manutenção e Suporte",
+            "text": "Oferecemos serviços contínuos de manutenção e suporte para garantir que seu site ou aplicativo funcione sem problemas. Cuidamos de atualizações, correção de erros e melhorias contínuas para manter seu projeto em ótimo estado.",
+            "features": [
+                "Atualizações e Correções",
+                "Suporte Técnico",
+                "Monitoramento e Segurança"
+            ]
+        }
+    },
+    "process": {
+        "heading": "Nosso Processo de Trabalho",
+        "steps": {
+            "step1": {
+                "title": "Passo 1: Descoberta",
+                "text": "Começamos entendendo as necessidades e objetivos do seu negócio. Durante essa fase, realizamos pesquisas, coletamos requisitos e identificamos os principais objetivos do projeto para garantir uma visão clara e alinhada.",
+                "tasks": [
+                    "Consulta Inicial",
+                    "Coleta de Requisitos",
+                    "Definição de Objetivos"
+                ]
+            },
+            "step2": {
+                "title": "Passo 2: Design e Prototipagem",
+                "text": "Nossa equipe cria wireframes e protótipos para visualizar o design e a funcionalidade do projeto. Trabalhamos em estreita colaboração com você para refinar o design, garantindo que atenda às suas expectativas e proporcione uma excelente experiência de usuário.",
+                "tasks": [
+                    "Wireframing",
+                    "Design UI/UX",
+                    "Prototipagem"
+                ]
+            },
+            "step3": {
+                "title": "Passo 3: Desenvolvimento",
+                "text": "Nesta fase, damos vida ao design desenvolvendo o site ou o aplicativo. Nosso processo de desenvolvimento inclui codificação, integração de funcionalidades necessárias e garantia de que tudo funcione conforme o esperado.",
+                "tasks": [
+                    "Desenvolvimento Frontend e Backend",
+                    "Integração de Funcionalidades",
+                    "Testes de Garantia de Qualidade"
+                ]
+            },
+            "step4": {
+                "title": "Passo 4: Lançamento e Suporte",
+                "text": "Após o desenvolvimento, preparamos para o lançamento. Cuidamos do processo de implantação e fornecemos suporte contínuo para resolver quaisquer problemas que surgirem e fazer as melhorias necessárias.",
+                "tasks": [
+                    "Implantação",
+                    "Suporte Pós-Lançamento",
+                    "Monitoramento de Desempenho"
+                ]
+            }
+        }
+    },
+    "contact": {
+        "heading": "Conte-nos um pouco sobre seu projeto",
+        "text": "Se você tiver alguma dúvida, não hesite em entrar em contato conosco preenchendo o formulário abaixo. Entraremos em contato o mais rápido possível.",
+        "form": {
+            "name": "Nome Completo",
+            "email": "Endereço de E-mail",
+            "message": "Mensagem",
+            "submit": "Enviar Mensagem"
+        },
+        "whatsapp_button": "Contrate-nos"
+    },
+    "footer": {
+        "about": "WhoamiCode é uma empresa líder em desenvolvimento web dedicada a criar soluções web inovadoras e fáceis de usar. Nossa equipe está comprometida em entregar resultados de alta qualidade que ajudam as empresas a prosperar no mundo digital.",
+        "quick_links": {
+            "about": "Sobre Nós",
+            "services": "Serviços",
+            "process": "Processo de Trabalho",
+            "contact": "Contate-Nos"
+        },
+        "contact_info": "iwhoamicode@gmail.com",
+        "social": {
+            "facebook": "Facebook",
+            "twitter": "Twitter",
+            "linkedin": "LinkedIn",
+            "instagram": "Instagram"
+        },
+        "copyright": "&copy; 2024 WhoamiCode. Todos os Direitos Reservados."
+    }
+}
